@@ -1,6 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "cli": {
+    "analytics": false
+  }, 
   "newProjectRoot": "projects",
   "projects": {
     "component-challenge": {
@@ -63,7 +66,8 @@
               "browserTarget": "component-challenge:build:production"
             },
             "development": {
-              "browserTarget": "component-challenge:build:development"
+              "browserTarget": "component-challenge:build:development",
+              "disableHostCheck": true
             }
           },
           "defaultConfiguration": "development"
